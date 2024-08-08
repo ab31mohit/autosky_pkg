@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/mohit/ros1_workspace/autosky_ws/src/autosky_pkg/build/devel/setup.sh

@@ -1,0 +1,8 @@
+prefix=/home/mohit/ros1_workspace/autosky_ws/src/autosky_pkg/build/devel
+
+Name: autosky_pkg
+Description: Description of autosky_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

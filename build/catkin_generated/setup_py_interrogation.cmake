@@ -1,0 +1,7 @@
+set(autosky_pkg_SETUP_PY_SETUP_MODULE "setuptools")
+set(autosky_pkg_SETUP_PY_VERSION "0.0.0")
+set(autosky_pkg_SETUP_PY_SCRIPTS "")
+set(autosky_pkg_SETUP_PY_PACKAGES "autosky_pkg")
+set(autosky_pkg_SETUP_PY_PACKAGE_DIRS "src/autosky_pkg")
+set(autosky_pkg_SETUP_PY_MODULES "")
+set(autosky_pkg_SETUP_PY_MODULE_DIRS "")

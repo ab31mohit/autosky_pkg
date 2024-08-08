@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="autosky_pkg" type="test_new_drone_teleop.py" name="test_new_drone_teleop"  output="screen">
+  </node>
+</launch>

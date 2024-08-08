@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="ugv_model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+  <arg name="ugv_x_pos" default="0.0"/>
+  <arg name="ugv_y_pos" default="0.0"/>
+  <arg name="ugv_z_pos" default="0.0"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find autosky_pkg)/worlds/runway_allrobots.world"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+  <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg ugv_model).urdf.xacro" />
+
+  <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf" args="-urdf -model turtlebot3_$(arg ugv_model) -x $(arg ugv_x_pos) -y $(arg ugv_y_pos) -z $(arg ugv_z_pos) -param robot_description" />
+
+</launch>
