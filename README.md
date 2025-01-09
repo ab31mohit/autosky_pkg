@@ -1,3 +1,5 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/ab31mohit/autosky_pkg)
+
 # Autosky Aerospace Internship 2024
 
 ## Pre installation Requirements 
